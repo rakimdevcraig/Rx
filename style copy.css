@@ -1,0 +1,115 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+/* Video Overlay/Button */
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+.video-overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% + 25px));
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.content.show {
+  opacity: 1;
+  transform: translate(-50%, calc(-50% + 300px)) scale(1);
+}
+
+.enter-button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.enter-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.enter-button:active {
+  transform: scale(0.98);
+}
+
+/* Header */
+.header {
+  /* background-color: black; */
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* margin-top: 2rem; */
+}
+
+.header ul a {
+  color: red;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.header ul li {
+  /* display: flex; */
+  align-content: center;
+}
+
+.title {
+  color: red;
+  font-size: 2rem;
+}

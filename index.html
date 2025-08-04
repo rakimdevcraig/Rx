@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rare Xports</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/88f6f6a302.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Website content (hidden initially) -->
+    <div class="website-content">
+      <header class="header">
+        <nav class="navbar">
+          <div class="container navbar-flex">
+            <div class="menu">
+              <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="menu-items">
+                <ul class="menu-list">
+                  <li><a href="#">Announcements</a></li>
+                  <li><a href="#">Store</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Music</a></li>
+                </ul>
+              </div>
+            </div>
+            <img class="logo" src="rxpfp.jpg" />
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="hero">
+      <!-- <img src="heropic.jpeg" /> -->
+      <div>
+        <h1>My Awesome Video</h1>
+        <video width="640" height="360" autoplay muted loop>
+          <source src="assets/videos/Toned down shine.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p>
+        At Rare Xports, we believe every individual has a unique story worth
+        telling and a distinctive style worth celebrating. We're more than just
+        a media company—we're cultural curators who bring together fashion,
+        storytelling, music, and visual artistry under one creative roof.
+        Whether you're looking for that perfect piece to complete your wardrobe,
+        want your life's journey captured in a compelling biography, need the
+        ideal soundtrack curated for your moments, or require stunning
+        photography that speaks volumes, we export the rare and extraordinary
+        elements that make you authentically you. Your vision, our
+        expertise—together we create something truly exceptional.
+      </p>
+    </div>
+    <div class="latestxports">
+      <div class="xports-hero">
+        <h1>Latest News</h1>
+        <input placeholder="search" />
+      </div>
+      <ul class="xports-list">
+        <li class="xports-item">
+          <p class="xports-item-date">June 10,2025</p>
+          <p class="xports-item-content">
+            <a href="#">
+              To celebrate our owners Bday we created a new playlist check it
+              out here
+            </a>
+          </p>
+        </li>
+        <li class="xports-item">
+          <p class="xports-item-date">May 10th, 2025</p>
+          <p class="xports-item-content">
+            <a href="#">
+              New documentary made in Thailand click here to watch
+            </a>
+          </p>
+        </li>
+        <li class="xports-item">
+          <p class="xports-item-date">November 25th</p>
+          <p class="xports-item-content">
+            <a href="#"> Details on the Black Friday Sale! </a>
+          </p>
+        </li>
+      </ul>
+      <div class="xports-see-more">
+        <a href="#">See More →</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <ul class="footer-list">
+        <li>
+          <a href="#"><img class="logo" src="rxpfp.jpg" /></a>
+        </li>
+        <li><p>&copy; Rare Xports</p></li>
+        <li>
+          <a href="https://www.instagram.com/rxworldwide/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Video overlay -->
+    <div class="video-overlay" id="videoOverlay">
+      <div class="video-container">
+        <!-- <video id="background-video" autoplay muted loop> -->
+        <video id="background-video" autoplay muted>
+          <!-- Unmuted -->
+          <!-- <video id="background-video" autoplay loop> -->
+          <source
+            src="assets/videos/Full HD Neon Logo Animation (1920x1080) (updated) opt 3.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="content" id="buttonContent">
+        <button class="enter-button" onclick="enterWebsite()">Enter</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
