@@ -9,15 +9,15 @@ function enterWebsite() {
 }
 
 // Show button after 14 seconds
-// setTimeout(() => {
-//   const buttonContent = document.getElementById("buttonContent")
-//   buttonContent.classList.add("show")
-// }, 9000)
-
 setTimeout(() => {
   const buttonContent = document.getElementById("buttonContent")
   buttonContent.classList.add("show")
-}, 5000)
+}, 9000)
+
+// setTimeout(() => {
+//   const buttonContent = document.getElementById("buttonContent")
+//   buttonContent.classList.add("show")
+// }, 5000)
 
 // Ensure video plays on mobile devices
 document.addEventListener("DOMContentLoaded", function () {
